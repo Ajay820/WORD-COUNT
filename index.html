@@ -12,7 +12,9 @@
         <form name="newform">
             <input type="text" name="four" oninput="count()">
         </form>
-        <h1 id="test"></h1>
+        <h1 id="test">
+            <p>Word Count:0 <br> Length of Words :0</p>
+        </h1>
     </div>
     <script>
         function count(){
@@ -20,7 +22,7 @@
             let tlength = input.length
             let ans = input.split(" ")
             let wcount = ans.length - 1
-            document.getElementById("test").innerText = `word count is ${wcount} \n length of words  ${tlength}`
+            document.getElementById("test").innerText = `Word count is ${wcount} \n Length of words  ${tlength}`
 
         }
     </script>
